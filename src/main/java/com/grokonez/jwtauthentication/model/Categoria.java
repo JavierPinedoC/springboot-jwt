@@ -18,10 +18,13 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.NaturalId;
 
+
+
+
 @Entity
 @Table(name = "categorias", uniqueConstraints = {
         @UniqueConstraint(columnNames = {
-            "idcategoria"
+            "tipo"
         })
        
 })
@@ -30,18 +33,18 @@ public class Categoria{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long idcategoria;
+    private Long tipo;
 
     @NotBlank
-    @Size(min=3, max = 255)
-    private String categoria;
+    @Size(min=3, max = 100)
+    private String descripcion;
 
    
     public Categoria() {}
 
-    public Categoria(Long idcategoria, String categoria) {
-        this.idcategoria = idcategoria;
-        this.categoria = categoria;
+    public Categoria(Long tipo, String descripcion) {
+        this.tipo = tipo;
+        this.descripcion = descripcion;
     }
 
     public Long getId() {
@@ -52,21 +55,22 @@ public class Categoria{
         this.id = id;
     }
 
-    public String getCategoria() {
-        return categoria;
+    public Long getTipo() {
+        return tipo;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setTipo(Long tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }   
 
-    public Long getIdcategoria() {
-        return idcategoria;
-    }
-
-    public void setIdcategoria(Long idcategoria) {
-        this.idcategoria = idcategoria;
-    }
-
+  
    
 }
