@@ -1,3 +1,4 @@
+
 package com.grokonez.jwtauthentication.model;
 
 import java.util.HashSet;
@@ -18,28 +19,30 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.NaturalId;
 
+
+
+
 @Entity
 @Table(name = "municipios", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {
-            "idmunicipio"
-        })
-       
+        
 })
 public class Municipio{
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private Long idestado;
     private Long idmunicipio;
 
     @NotBlank
-    @Size(min=3, max = 50)
+    @Size(min=3, max = 100)
     private String municipio;
 
    
     public Municipio() {}
 
-    public Municipio(Long idmunicipio, String municipio) {
+    public Municipio(Long idestado, Long idmunicipio, String municipio) {
+        this.idestado = idestado;
         this.idmunicipio = idmunicipio;
         this.municipio = municipio;
     }
@@ -52,13 +55,13 @@ public class Municipio{
         this.id = id;
     }
 
-    public String getMunicipio() {
-        return municipio;
+    public Long getIdestado() {
+        return idestado;
     }
 
-    public void setMunicipio(String municipio) {
-        this.municipio = municipio;
-    }   
+    public void setIdestado(Long idestado) {
+        this.idestado = idestado;
+    }
 
     public Long getIdmunicipio() {
         return idmunicipio;
@@ -67,6 +70,15 @@ public class Municipio{
     public void setIdmunicipio(Long idmunicipio) {
         this.idmunicipio = idmunicipio;
     }
+
+    public String getMunicipio() {
+        return municipio;
+    }
+
+    public void setMunicipio(String municipio) {
+        this.municipio = municipio;
+    }   
+
 
    
 }

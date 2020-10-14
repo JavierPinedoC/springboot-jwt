@@ -1,4 +1,6 @@
 package com.grokonez.jwtauthentication.controller;
+import java.util.List;
+
 import com.grokonez.jwtauthentication.model.Municipio;
 import com.grokonez.jwtauthentication.repository.MunicipioRepository;
 
@@ -17,9 +19,9 @@ public class MunicipioController {
     @Autowired
     private MunicipioRepository municipioRepository;
 
-    @GetMapping("/estados")
-    public Page<Municipio> getEstados(Pageable pageable) {
-        return municipioRepository.findAll(pageable);
+    @GetMapping("/municipios")
+    public List<Municipio> getMunicipios(@RequestParam(value="idestado") Long idestado){
+        return municipioRepository.findMunicipiosByEstado(idestado);
     }
   
     
