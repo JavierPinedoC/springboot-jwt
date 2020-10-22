@@ -4,11 +4,13 @@
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/repository/MunicipioRepository.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/security/WebSecurityConfig.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/controller/EstadoController.java
+/home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/controller/EmpresaController.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/model/Estado.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/security/jwt/JwtAuthEntryPoint.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/repository/CategoriaRepository.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/controller/CategoriaController.java
+/home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/model/Empresa.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/repository/UserRepository.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/repository/EstadoRepository.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/message/request/LoginForm.java
@@ -16,6 +18,7 @@
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/security/jwt/JwtProvider.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/security/services/UserDetailsServiceImpl.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/model/Role.java
+/home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/repository/EmpresaRepository.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/security/jwt/JwtAuthTokenFilter.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/model/Municipio.java
 /home/javipc/Documents/A_Tec/AdministradorSoft/springboot-jwt/src/main/java/com/grokonez/jwtauthentication/controller/TestRestAPIs.java
